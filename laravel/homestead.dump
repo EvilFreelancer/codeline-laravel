@@ -1,0 +1,194 @@
+-- MySQL dump 10.16  Distrib 10.1.29-MariaDB, for debian-linux-gnu (x86_64)
+--
+-- Host: 127.0.0.1    Database: homestead
+-- ------------------------------------------------------
+-- Server version	5.7.22
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `comments`
+--
+
+DROP TABLE IF EXISTS `comments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `comments` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id_user` int(11) NOT NULL,
+  `id_film` int(11) NOT NULL,
+  `comment` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `comments`
+--
+
+LOCK TABLES `comments` WRITE;
+/*!40000 ALTER TABLE `comments` DISABLE KEYS */;
+INSERT INTO `comments` VALUES (1,5,4,'Rerum eveniet at in cupiditate fugiat sed repellat. Molestiae saepe repudiandae voluptatem sequi adipisci sed omnis. Reprehenderit molestias qui accusantium amet est sint.','2018-07-08 17:11:53','2018-07-08 17:11:53'),(2,8,5,'Voluptas blanditiis earum facilis quis ullam. A consequatur assumenda impedit ullam nobis maiores. Eveniet aliquid et ipsa et dolores et ex provident. Non cumque ipsum enim doloribus.','2018-07-08 17:11:53','2018-07-08 17:11:53'),(3,3,9,'Itaque molestiae modi tempora harum reprehenderit. Consequatur numquam nisi id. Repudiandae consectetur sunt tenetur qui.','2018-07-08 17:11:53','2018-07-08 17:11:53'),(4,10,6,'Omnis qui in voluptas velit eveniet. Dolores dolorem voluptatem modi debitis reiciendis possimus officiis ut. Quaerat nihil ipsam inventore qui ut.','2018-07-08 17:11:53','2018-07-08 17:11:53'),(5,1,7,'Aliquam dolores suscipit perspiciatis sed quis eum. Ut aut voluptates ea illum sint aut sapiente. Ut fugit mollitia minus est.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(6,10,2,'Distinctio aut voluptatem aliquam laboriosam. Dolor eos quod quae qui. Aut veritatis ea est. Est porro et saepe alias.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(7,2,8,'Consequuntur et possimus eaque recusandae qui. Porro harum animi voluptas nam non. Nam est nesciunt tempora. Natus odio animi qui.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(8,8,10,'Et et dicta suscipit eaque. Ab voluptatibus voluptatem expedita. Sit dolor aut nesciunt natus illum.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(9,8,1,'Eaque omnis sunt cum molestiae. Sapiente veniam natus itaque qui nesciunt a. Et mollitia aperiam qui eum accusamus consectetur ducimus totam. Ut aliquid et est quae laboriosam.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(10,3,3,'Id error quaerat voluptatem qui. Enim minus tempora ut aut. Voluptas adipisci quae quia qui. Praesentium necessitatibus voluptas tenetur dicta sapiente fugiat.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(11,5,4,'Ipsam omnis ratione quas. Tenetur corrupti vel sed libero ut.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(12,10,1,'Magni rerum nisi perspiciatis similique ea porro. Sapiente in soluta sunt at nemo id magni. Impedit velit nesciunt qui eos. Cupiditate animi quam quaerat ea possimus facere.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(13,1,3,'Non eveniet velit nisi labore temporibus. Consequuntur qui possimus eum quidem quis enim velit. Eum consequuntur accusantium sed enim corporis eum sit.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(14,9,6,'Maiores et quibusdam iste et similique. Accusantium autem qui qui consequatur necessitatibus ut molestiae. Cupiditate autem ut sed. Beatae eveniet maxime delectus quos autem soluta qui.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(15,9,2,'Quia iusto reprehenderit consequuntur eligendi voluptates qui. Asperiores omnis nulla amet magni aut. Quo dolor impedit qui repellendus numquam odio. Aut ipsa architecto nesciunt impedit.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(16,8,5,'Ad dolores corrupti voluptatem fugiat nostrum odio. Id sunt quis et placeat assumenda voluptatem. Qui vero explicabo ut quis quia odit. Suscipit dolor quis nesciunt praesentium porro ut.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(17,3,9,'Enim tempora perspiciatis hic asperiores laborum. Qui autem omnis aut enim illo. Quo expedita ut in non omnis quasi. Quo maiores voluptas dignissimos aut dicta placeat beatae.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(18,8,8,'Libero voluptas officiis vel dicta aut tempore deleniti adipisci. Fugiat tenetur et rem ea distinctio ab. Quasi ea quam qui.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(19,3,9,'Rerum adipisci amet doloremque minima. Debitis nisi aspernatur saepe dicta quisquam.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(20,5,2,'Et natus sit voluptatem exercitationem accusamus doloremque omnis. Aut repellendus doloribus et autem maiores.','2018-07-08 17:11:54','2018-07-08 17:11:54'),(21,1,1,'asdf','2018-07-08 17:35:58','2018-07-08 17:35:58'),(22,1,1,'zxcvzxcvzxcv','2018-07-08 17:36:01','2018-07-08 17:36:01');
+/*!40000 ALTER TABLE `comments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `films`
+--
+
+DROP TABLE IF EXISTS `films`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `films` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `release_date` date NOT NULL,
+  `rating` tinyint(4) NOT NULL,
+  `ticket_price` int(11) NOT NULL,
+  `country` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `genres` json NOT NULL,
+  `photo` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `films`
+--
+
+LOCK TABLES `films` WRITE;
+/*!40000 ALTER TABLE `films` DISABLE KEYS */;
+INSERT INTO `films` VALUES (1,'Mason Baumbach','mason-baumbach','Necessitatibus voluptas ut expedita. Ut porro vel qui enim quibusdam non sit. Mollitia dicta reprehenderit doloremque accusantium placeat est sit suscipit.','1972-12-24',4,51,'Thailand','[3]','https://lorempixel.com/640/480/?19111','2018-07-08 15:49:10','2018-07-08 15:49:10'),(2,'Ava Hintz','ava-hintz','Qui ut ipsum ut blanditiis totam autem. Quaerat vel qui velit enim voluptatem a esse. Sint sequi vel nihil.','2014-02-10',5,82,'Denmark','[1]','https://lorempixel.com/640/480/?55823','2018-07-08 15:49:10','2018-07-08 15:49:10'),(3,'Prof. Brooks Dickens','prof.-brooks-dickens','Sapiente et dignissimos animi. Ut quas aliquid laborum suscipit recusandae ducimus. Modi nihil inventore debitis vel dicta ducimus eius. Quae recusandae aliquam fugit non.','1983-10-07',4,76,'Benin','[5]','https://lorempixel.com/640/480/?33581','2018-07-08 15:49:10','2018-07-08 15:49:10'),(4,'Caleigh Marks','caleigh-marks','Maxime ut inventore quam eligendi. Qui ut hic fugiat hic. Debitis sit nostrum voluptatem dolorum sit consequatur non rerum.','1996-06-20',3,66,'Kenya','[3]','https://lorempixel.com/640/480/?15365','2018-07-08 15:49:10','2018-07-08 15:49:10'),(5,'Aliya Stoltenberg','aliya-stoltenberg','Perspiciatis velit cumque delectus eos beatae. Tenetur voluptatem occaecati dignissimos. Quae id officiis in officiis fugiat consectetur. Ullam temporibus rerum odio et dolorem quisquam.','2002-04-07',5,57,'Western Sahara','[5]','https://lorempixel.com/640/480/?50138','2018-07-08 15:49:10','2018-07-08 15:49:10'),(6,'Alexa Mann','alexa-mann','Ut est voluptatem alias dignissimos. Velit laudantium ullam nam tempore deserunt reiciendis id quidem. Velit omnis tempora dolor eveniet.','2011-08-03',2,58,'Botswana','[5]','https://lorempixel.com/640/480/?61778','2018-07-08 15:49:10','2018-07-08 15:49:10'),(7,'Bernard Bashirian','bernard-bashirian','Beatae temporibus voluptas consectetur. Tempore tempora dolor ab eum. Velit fugit voluptas nulla quo aut quo ullam. Recusandae quo officiis odit facilis fugit quis quo.','2003-01-11',2,83,'Mauritania','[3]','https://lorempixel.com/640/480/?72400','2018-07-08 15:49:10','2018-07-08 15:49:10'),(8,'Sylvester Boehm Jr.','sylvester-boehm-jr.','Eligendi ducimus neque magnam expedita repudiandae. Possimus vel nostrum cum ipsa aliquid accusamus quibusdam.','1999-09-30',4,76,'Suriname','[2]','https://lorempixel.com/640/480/?81946','2018-07-08 15:49:10','2018-07-08 15:49:10'),(9,'Oda Huel MD','oda-huel-md','Ut non autem tenetur architecto. Omnis enim aperiam sint ipsam est et. Libero amet reiciendis quod alias. Sint doloremque aspernatur aspernatur enim omnis.','1988-12-20',3,83,'Estonia','[5]','https://lorempixel.com/640/480/?99432','2018-07-08 15:49:10','2018-07-08 15:49:10'),(10,'Paige Pacocha','paige-pacocha','Officiis eligendi sunt labore nulla et ducimus hic. Enim consequatur voluptatem est autem iure perspiciatis. Tenetur tempore harum laboriosam iure voluptatibus. Ut pariatur illo et.','1994-05-11',5,88,'Ecuador','[2]','https://lorempixel.com/640/480/?89680','2018-07-08 15:49:10','2018-07-08 15:49:10'),(11,'asdfasdf','asdfasdf','argadfgadf','2000-01-01',1,100,'asdfa','[\"2\", \"5\"]','data:image/jpeg;base64,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','2018-07-08 16:56:43','2018-07-08 16:56:43');
+/*!40000 ALTER TABLE `films` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `genres`
+--
+
+DROP TABLE IF EXISTS `genres`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `genres` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `genres`
+--
+
+LOCK TABLES `genres` WRITE;
+/*!40000 ALTER TABLE `genres` DISABLE KEYS */;
+INSERT INTO `genres` VALUES (1,'Action','2018-07-08 13:43:10','2018-07-08 13:43:10'),(2,'Comedy','2018-07-08 13:43:10','2018-07-08 13:43:10'),(3,'Arthouse','2018-07-08 13:43:10','2018-07-08 13:43:10'),(4,'Music','2018-07-08 13:43:10','2018-07-08 13:43:10'),(5,'Thriller','2018-07-08 13:43:10','2018-07-08 13:43:10');
+/*!40000 ALTER TABLE `genres` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `migrations`
+--
+
+DROP TABLE IF EXISTS `migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `migrations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `migrations`
+--
+
+LOCK TABLES `migrations` WRITE;
+/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
+INSERT INTO `migrations` VALUES (2,'2014_10_12_100000_create_password_resets_table',1),(4,'2018_07_08_102612_create_genres_table',1),(5,'2014_10_12_000000_create_users_table',2),(7,'2018_07_08_102531_create_films_table',3),(8,'2018_07_08_170626_create_comments_table',4);
+/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `password_resets`
+--
+
+DROP TABLE IF EXISTS `password_resets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `password_resets` (
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  KEY `password_resets_email_index` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `password_resets`
+--
+
+LOCK TABLES `password_resets` WRITE;
+/*!40000 ALTER TABLE `password_resets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `users_email_unique` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'Administrator','admin@test.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G','tgCwETycVRJ3Ed0eatJi0Sy9MAd8Al1o4t7KjpZfQteRo1hQ3wYA3nO7LZMK','2018-07-08 15:47:57','2018-07-08 15:47:57'),(2,'Skyla Donnelly','little.ted@hotmail.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(3,'Alva Hegmann I','barton92@dibbert.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(4,'Trisha Jacobs','uhamill@tillman.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(5,'Mrs. Wilhelmine Aufderhar DDS','shaniya.botsford@gmail.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(6,'Myrtice Wehner','gutmann.triston@weimann.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(7,'Brent Donnelly Sr.','chasity75@gmail.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(8,'Prof. Jonatan Gottlieb','jaqueline45@jacobs.info','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(9,'Ole Muller','xbechtelar@yahoo.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(10,'Ignatius Lebsack','sibyl.kuhn@hammes.com','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57'),(11,'Tobin Feest','wolf.jessyca@windler.biz','$2y$10$8e3qzIiIjSPqnIPKOP83POate1KAY/3srL8cW.2FWgFc.Tf6eaq.G',NULL,'2018-07-08 15:47:57','2018-07-08 15:47:57');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-07-08 20:51:11
